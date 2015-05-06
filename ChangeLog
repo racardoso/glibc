@@ -1,6 +1,10 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/aarch64/sigcontextinfo.h (ucontext_get_pc):
+	New function.
+
+	[BZ #12683]
 	* sysdeps/unix/sysv/linux/powerpc/syscall_cancel.S: New file.
 	* sysdeps/unix/sysv/linux/powerpc/sysdep-cancel.h
 	(__pthread_get_pc): New function.
