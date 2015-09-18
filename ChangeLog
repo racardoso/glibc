@@ -1,6 +1,11 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/powerpc/syscall_cancel.S: New file.
+	* sysdeps/unix/sysv/linux/powerpc/sysdep-cancel.h
+	(__pthread_get_pc): New function.
+
+	[BZ #12683]
 	* sysdeps/i386/nptl/tls.h (THREAD_ATOMIC_BIT_SET): Remove macro.
 	* sysdeps/unix/sysv/linux/i386/Makefile
 	[$(subdir) = elf] (sysdep-rtld_routines): Add libc-do-syscall object.
