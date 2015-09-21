@@ -1,7 +1,17 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
-	* sysdeps/unix/sysv/linux/powerpc/syscall.S (syscall): Create stack
-	frame.
+	* debug/tst-backtrace5.c (handle_signal): Check for syscall
+	instead of read.
+	(fn): Issue the read syscall instead of call the cancellable
+	syscall.
+	* nptl/Makefile [$(run-built-tests) = yes] (tests-special): Remove
+	tst-cancel-wrappers.sh.
+	* nptl/tst-cancel-wrappers.sh: Remove file.
+	* nptl/tst-cancel2.c (do_test): Do not close pipe.
+	* nptl/tst-cancel3.c (do_test): Likewise.
+	* nptl/tst-cancel4.c (tf_write): Handle cancelled syscall with
+	side-effects.
+	(tf_send): Likewise.
 
 	* nptl/tst-cancel4-common.h (set_socket_buffer): New function.
 	* nptl/tst-cancel4-common.c (do_test): Call set_socket_buffer
