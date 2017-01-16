@@ -1,6 +1,11 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/ia64/sigcontextinfo.h (ucontext_get_pc,
+	ucontext_get_mask): New functions.
+	* sysdeps/unix/sysv/linux/ia64/syscall_cancel.S: New file.
+
+	[BZ #12683]
 	* sysdeps/unix/sysv/linux/s390/sigcontextinfo.h (ucontext_get_pc):
 	New function.
 
