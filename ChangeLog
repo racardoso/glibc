@@ -1,6 +1,10 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/m68k/sigcontextinfo.h (ucontext_get_pc):
+	New function.
+
+	[BZ #12683]
 	* sysdeps/unix/sysv/linux/alpha/sigcontextinfo.h (ucontext_get_pc):
 	New function.
 
