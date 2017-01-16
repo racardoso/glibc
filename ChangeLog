@@ -1,6 +1,15 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/sparc/sparc32/sigcontextinfo.h
+	(ucontext_get_pc): New function.
+	* sysdeps/unix/sysv/linux/sparc/sparc64/sigcontextinfo.h
+	(ucontext_get_pc): Likewise.
+	* sysdeps/unix/sysv/linux/sparc/sparc32/syscall_cancel.S: New file.
+	* sysdeps/unix/sysv/linux/sparc/sparc64/syscall_cancel.S: Likwise.
+	* sysdeps/unix/sysv/linux/sparc/sparc64/pause.c: New file.
+
+	[BZ #12683]
 	* sysdeps/unix/sysv/linux/tile/sigcontextinfo.h (ucontext_get_pc):
 	New function.
 
