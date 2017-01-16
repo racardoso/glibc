@@ -1,6 +1,10 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/tile/sigcontextinfo.h (ucontext_get_pc):
+	New function.
+
+	[BZ #12683]
 	* sysdeps/unix/sysv/linux/microblaze/syscall_cancel.S: New file.
 	* sysdeps/unix/sysv/linux/microblaze/sigcontextinfo.h
 	(ucontext_get_pc): New function.
