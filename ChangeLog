@@ -1,6 +1,10 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
 	[BZ #12683]
+	* sysdeps/unix/sysv/linux/hppa/sigcontextinfo.h: New file.
+	* sysdeps/unix/sysv/linux/hppa/syscall_cancel.S: Likewise.
+
+	[BZ #12683]
 	* nptl/libc-cancellation.c (__syscall_cancel): Define and use 7
 	argument syscall if architecture requires it.
 	* nptl/pthreadP.h (__syscall_cancel_arch): Likewise.
