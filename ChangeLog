@@ -1,5 +1,8 @@
 2018-02-26  Adhemerval Zanella  <adhemerval.zanella@linaro.org>
 
+	* sysdeps/unix/sysv/linux/powerpc/syscall.S (syscall): Create stack
+	frame.
+
 	* nptl/tst-cancel4-common.h (set_socket_buffer): New function.
 	* nptl/tst-cancel4-common.c (do_test): Call set_socket_buffer
 	for socketpair endpoint.
