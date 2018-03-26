@@ -152,7 +152,7 @@ L(no_vmx):
 	second argument (-4@4), and target address (8@0), respectively.  */
 	LIBC_PROBE (longjmp, 3, 8@3, -4@4, 8@0)
 	mtlr r0
-/* 	std r2,FRAME_TOC_SAVE(r1)	Restore the TOC save area.  */
+ 	std r2,FRAME_TOC_SAVE(r1)	/* Restore the TOC save area.  */
 	ld r21,((JB_GPRS+7)*8)(r3)
 	lfd fp21,((JB_FPRS+7)*8)(r3)
 	ld r22,((JB_GPRS+8)*8)(r3)
